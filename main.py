@@ -31,8 +31,6 @@ model = None
 preprocessor = None
 
 #======================================================
-#                    HASINI'S PART
-#======================================================
 
 def evaluate_model():
     """
@@ -84,8 +82,6 @@ def evaluate_model():
         print(f"Could not evaluate model: {e}")
         return None
 
-#================================================
-#             PRAGNA'S PART
 #================================================
 
 def train_model():
@@ -176,8 +172,6 @@ def pred_sal(exp: float, edu: str, job: str):
         return {"error": str(e)}
 
 #========================================================
-#                     PAAVANI'S PART
-#========================================================
 
 @app.get("/view_graph")
 def view_graph(exp: float, edu: str, job: str):
@@ -241,8 +235,6 @@ def get_accuracy():
     else:
         return {"error": "Metrics not found. Please delete model.pkl and restart to re-train."}
 
-#===================================================
-#                NIKHITA'S PART
 #===================================================
 
 @app.get("/shap_waterfall")
